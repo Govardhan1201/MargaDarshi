@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MārgaDarshi | Visakhapatnam City Bus Guide</title>
+    <meta name="description"
+        content="MārgaDarshi - Your premium multilingual bus guide for Visakhapatnam. Find routes, track buses, and travel smarter.">
+    <meta name="keywords"
+        content="Vizag bus, APSRTC, Visakhapatnam bus routes, city bus, metro express, bus timetable" />
+    <meta property="og:title" content="MārgaDarshi – Smart Bus Guide for Visakhapatnam" />
+    <meta property="og:description"
+        content="Find the right bus, save money, avoid crowds. Your smart APSRTC bus companion for Vizag." />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Favicon emoji -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚌</text></svg>" />
+</head>
+
+<body>
+
+    <!-- ═══════ PAGE LOADER ═══════ -->
+    <div id="pageLoader" aria-hidden="true">
+        <div class="loader-inner">
+            <div class="loader-bus">🚌</div>
+            <div class="loader-track">
+                <div class="loader-progress"></div>
+            </div>
+            <div class="loader-text">Loading MārgaDarshi…</div>
+        </div>
+    </div>
+
+    <!-- ═══════ CUSTOM CURSOR ═══════ -->
+    <div id="cursorDot" aria-hidden="true"></div>
+    <div id="cursorRing" aria-hidden="true"></div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     NAVBAR
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="#hero" class="nav-logo" aria-label="MārgaDarshi Home">
+                <div class="logo-icon" aria-hidden="true">🚌</div>
+                <div class="logo-text">
+                    <span class="logo-main">MārgaDarshi</span>
+                    <span class="logo-sub">Visakhapatnam City Bus Guide</span>
+                </div>
+            </a>
+
+            <ul class="nav-links" role="list">
+                <li><a href="#" id="navBusSearchDesktop">🔍 Bus Search</a></li>
+                <li><a href="#route-finder">Route Finder</a></li>
+                <li><a href="#tourist">Tourist Spots</a></li>
+                <li><a href="#timetable">Timetable</a></li>
+                <li><a href="#map-section">Map</a></li>
+                <li><a href="#community">Community</a></li>
+                <li><a href="#chatbot-section">Chatbot</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <!-- Language Switcher -->
+                <div class="lang-switcher" role="group" aria-label="Language selector">
+                    <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+                    <button class="lang-btn" data-lang="te" aria-pressed="false">తె</button>
+                    <button class="lang-btn" data-lang="hi" aria-pressed="false">हि</button>
+                </div>
+                <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu" role="navigation" aria-label="Mobile navigation">
+        <a href="#" id="navBusSearchMobile">🔍 Bus Search</a>
+        <a href="#route-finder">📍 Route Finder</a>
+        <a href="#tourist">🏛️ Tourist Spots</a>
+        <a href="#timetable">🕐 Timetable</a>
+        <a href="#map-section">🗺️ Map</a>
+        <a href="#smart-tips">💡 Smart Tips</a>
+        <a href="#community">📢 Community</a>
+        <a href="#chatbot-section">🤖 Chatbot</a>
+        <a href="#faq">❓ FAQ</a>
+    </div>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     HERO
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="hero" aria-label="Hero section">
+        <div class="animated-bg" aria-hidden="true">
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="eyebrow">
+                        <span>🚌</span>
+                        <span>Visakhapatnam · APSRTC City Buses</span>
+                    </div>
+                    <h1>Travel Smarter<br /> with <span class="gradient-text">MārgaDarshi</span></h1>
+                    <p data-i18n="tagline">Your Smart Bus Companion in Visakhapatnam — find routes, save fare, avoid
+                        crowds.</p>
+                    <div class="hero-cta">
+                        <a href="#route-finder" class="btn btn-primary">🔍 Find My Bus</a>
+                        <a href="#how-it-works" class="btn btn-outline">How It Works</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="hero-stat">
+                            <span class="number">35+</span>
+                            <span class="label">Bus Stops</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="number">12+</span>
+                            <span class="label">Routes Mapped</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="number">2</span>
+                            <span class="label">Bus Types</span>
+                        </div>
+                        <div class="hero-stat">
+                            <span class="number">3</span>
+                            <span class="label">Languages</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Route Finder Widget (inline in hero) -->
+                <div id="route-finder">
+                    <div class="route-finder-widget" role="search" aria-label="Bus route finder">
+                        <div class="widget-header" aria-hidden="true">
+                            <div class="widget-dot dot-red"></div>
+                            <div class="widget-dot dot-yellow"></div>
+                            <div class="widget-dot dot-green"></div>
+                            <span
+                                style="margin-left:8px;font-size:0.85rem;font-weight:600;color:var(--text-secondary)">Bus
+                                Route Finder</span>
+                        </div>
+
+                        <form class="finder-form" id="routeFinderForm" novalidate>
+                            <div class="finder-row">
+                                <datalist id="vizagStopsList"></datalist>
+                                <div class="finder-group">
+                                    <label for="fromStop" data-i18n="from">From</label>
+                                    <input type="text" class="finder-select" id="fromStop" list="vizagStopsList"
+                                        placeholder="Type departure stop" autocomplete="off"
+                                        aria-label="Departure stop">
+                                </div>
+
+                                <div
+                                    style="display:flex;align-items:flex-end;gap:0;justify-content:center;padding-bottom:2px">
+                                    <button type="button" class="swap-btn" id="swapStops"
+                                        aria-label="Swap From and To stops" title="Swap stops">⇄</button>
+                                </div>
+
+                                <div class="finder-group">
+                                    <label for="toStop" data-i18n="to">To</label>
+                                    <input type="text" class="finder-select" id="toStop" list="vizagStopsList"
+                                        placeholder="Type destination stop" autocomplete="off"
+                                        aria-label="Destination stop">
+                                </div>
+                            </div>
+
+                            <button type="submit" class="search-btn" id="searchBtn">
+                                🔍 <span data-i18n="search">Find Buses</span>
+                            </button>
+                        </form>
+
+                        <div
+                            style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);display:flex;gap:0.75rem;flex-wrap:wrap">
+                            <span class="badge">🏙️ City Ordinary</span>
+                            <span class="badge"
+                                style="color:#c4b5fd;border-color:rgba(124,92,255,0.3);background:rgba(124,92,255,0.08)">🚍
+                                Metro Express</span>
+                            <span class="badge"
+                                style="color:#fb923c;border-color:rgba(255,107,53,0.3);background:rgba(255,107,53,0.08)">🎫
+                                One Day Pass ₹50</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     ROUTE RESULTS
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="results" aria-live="polite" aria-label="Bus search results">
+        <div class="container">
+            <div class="results-header">
+                <div>
+                    <h2 class="results-title">Available Buses</h2>
+                    <p class="results-meta">Tap a bus card to highlight its route on the map below ↓</p>
+                </div>
+            </div>
+            <div class="results-grid" id="resultsContainer"></div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     HOW IT WORKS
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="how-it-works" class="section-py" aria-label="How it works">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="howItWorks">How It Works</p>
+                <h2>Four Steps to Your<br />Perfect Bus Journey</h2>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card fade-up">
+                    <span class="step-emoji">📍</span>
+                    <div class="step-number">1</div>
+                    <h3>Pick Your Stops</h3>
+                    <p>Choose where you're starting from and where you want to go from our list of 35+ Vizag bus stops.
+                    </p>
+                </div>
+                <div class="step-card fade-up">
+                    <span class="step-emoji">🔍</span>
+                    <div class="step-number">2</div>
+                    <h3>See All Options</h3>
+                    <p>We show you every bus that connects your stops — with fare, travel time, and current crowd level.
+                    </p>
+                </div>
+                <div class="step-card fade-up">
+                    <span class="step-emoji">💡</span>
+                    <div class="step-number">3</div>
+                    <h3>Get Smart Tips</h3>
+                    <p>Receive personalized advice: should you buy a Day Pass? Is there a faster Metro Express? Is it
+                        peak hour?</p>
+                </div>
+                <div class="step-card fade-up">
+                    <span class="step-emoji">🚌</span>
+                    <div class="step-number">4</div>
+                    <h3>Board with Confidence</h3>
+                    <p>Know exactly which bus number to look for, which stops it covers, and when the next one departs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     TOURIST SPOT FINDER
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="tourist" class="section-py" aria-label="Tourist spot finder">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="touristSpots">Tourist Spots</p>
+                <h2>Which Bus Goes<br />to My Favourite Spot?</h2>
+                <p>Select a famous Vizag destination and get bus directions instantly.</p>
+            </div>
+
+            <div class="tourist-finder">
+                <select class="tourist-select" id="touristSelect" aria-label="Select tourist spot">
+                    <option value="">-- Choose a tourist spot --</option>
+                </select>
+            </div>
+
+            <div class="tourist-result" id="touristResult" aria-live="polite"></div>
+
+            <!-- Quick spot grid -->
+            <div style="margin-top:3rem">
+                <p
+                    style="text-align:center;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-secondary);margin-bottom:1.5rem">
+                    Popular Destinations</p>
+                <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center">
+                    <button class="btn btn-outline" onclick="quickSelectSpot('rk_beach')"
+                        style="font-size:0.85rem;padding:0.5rem 1.25rem">🏖️ RK Beach</button>
+                    <button class="btn btn-outline" onclick="quickSelectSpot('kailasagiri')"
+                        style="font-size:0.85rem;padding:0.5rem 1.25rem">🏔️ Kailasagiri</button>
+                    <button class="btn btn-outline" onclick="quickSelectSpot('simhachalam')"
+                        style="font-size:0.85rem;padding:0.5rem 1.25rem">🕌 Simhachalam</button>
+                    <button class="btn btn-outline" onclick="quickSelectSpot('rushikonda')"
+                        style="font-size:0.85rem;padding:0.5rem 1.25rem">🌊 Rushikonda</button>
+                    <button class="btn btn-outline" onclick="quickSelectSpot('bheemunipatnam')"
+                        style="font-size:0.85rem;padding:0.5rem 1.25rem">🌅 Bheemunipatnam</button>
+                    <button class="btn btn-outline" onclick="quickSelectSpot('vizag_zoo')"
+                        style="font-size:0.85rem;padding:0.5rem 1.25rem">🦁 Vizag Zoo</button>
+                    <button class="btn btn-outline" onclick="quickSelectSpot('submarine_museum')"
+                        style="font-size:0.85rem;padding:0.5rem 1.25rem">⚓ Submarine Museum</button>
+                    <button class="btn btn-outline" onclick="quickSelectSpot('borra_caves')"
+                        style="font-size:0.85rem;padding:0.5rem 1.25rem">🪨 Borra Caves</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     TIMETABLE
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="timetable" class="section-py" aria-label="APSRTC Bus Timetable">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="timetable">Bus Timetable</p>
+                <h2>APSRTC General<br />Departure Schedule</h2>
+                <p>Official scheduled times for major routes. The next bus is highlighted automatically.</p>
+            </div>
+
+            <div class="timetable-disclaimer" id="timetableDisclaimer" role="note">
+                ⚠️ Times shown are APSRTC scheduled times and may vary due to traffic, diversions, or other conditions.
+                Always check at the bus stop.
+            </div>
+
+            <div class="timetable-controls">
+                <select class="timetable-select" id="timetableRoute" aria-label="Select route for timetable">
+                    <option value="">-- Select a Route --</option>
+                </select>
+            </div>
+
+            <div class="timetable-grid" id="timetableGrid">
+                <p style="color:var(--text-secondary);font-size:0.88rem">Select a route above to view its timetable.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     MAP
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="map-section" class="section-py" aria-label="Bus stop map">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="map">Bus Map</p>
+                <h2>All Vizag Bus Stops<br />on One Map</h2>
+                <p>Click any stop marker for bus route info. Route lines appear when you select a search result above.
+                </p>
+            </div>
+
+            <div class="map-container">
+                <div id="busMap" style="width:100%;height:100%" aria-label="Interactive map of Visakhapatnam bus stops">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     BUS TYPES
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="bus-types" class="section-py" aria-label="Bus types comparison">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow">Know Your Bus</p>
+                <h2>City Ordinary vs<br />Metro Express</h2>
+                <p>Vizag has two types of APSRTC city buses — choose the right one for your journey.</p>
+            </div>
+
+            <div class="bus-types-grid">
+                <!-- City Ordinary -->
+                <div class="card bus-type-card co">
+                    <div class="bus-type-header">
+                        <span class="bus-type-icon">🚌</span>
+                        <div>
+                            <h3 data-i18n="cityOrdinary">City Ordinary</h3>
+                            <div class="type-fare">Base fare from ₹7 · Stops at all designated stops</div>
+                        </div>
+                        <span class="tag tag-co" style="margin-left:auto">CO</span>
+                    </div>
+                    <div class="bus-type-body">
+                        <ul class="bus-type-features">
+                            <li><span>✅</span> Cheapest option — fare starts at ₹7</li>
+                            <li><span>✅</span> Operates on all major routes across the city</li>
+                            <li><span>✅</span> Stops at every designated bus stop on the route</li>
+                            <li><span>✅</span> Accepts One Day Pass (₹50 unlimited)</li>
+                            <li><span>✅</span> Student & senior concessions available</li>
+                            <li><span>⚠️</span> Slower — more stops, can get crowded in peak hours</li>
+                            <li><span>⚠️</span> Frequency varies — usually every 15–25 minutes</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Metro Express -->
+                <div class="card bus-type-card me">
+                    <div class="bus-type-header">
+                        <span class="bus-type-icon">🚍</span>
+                        <div>
+                            <h3 data-i18n="metroExpress">Metro Express</h3>
+                            <div class="type-fare">Fare 1.1x–1.2x of City Ordinary · Limited stops</div>
+                        </div>
+                        <span class="tag tag-me" style="margin-left:auto">ME</span>
+                    </div>
+                    <div class="bus-type-body">
+                        <ul class="bus-type-features">
+                            <li><span>✅</span> Faster — serves key stops only, skipping smaller ones</li>
+                            <li><span>✅</span> Less crowded — better comfort, especially during peak hours</li>
+                            <li><span>✅</span> Operates on select high-demand routes (e.g., Beach Road, IT Corridor)
+                            </li>
+                            <li><span>✅</span> Air-conditioned variants available on some routes</li>
+                            <li><span>⚠️</span> Slightly higher fare (about 10–20% more than City Ordinary)</li>
+                            <li><span>⚠️</span> Limited routes — not every corridor has a Metro Express</li>
+                            <li><span>⚠️</span> Lower frequency — usually every 30–45 minutes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- One Day Pass highlight -->
+            <div
+                style="margin-top:2rem;background:linear-gradient(135deg,rgba(0,212,170,0.08),rgba(124,92,255,0.08));border:1px solid var(--border-brand);border-radius:var(--radius);padding:2rem;text-align:center">
+                <div style="font-size:2.5rem;margin-bottom:0.75rem">🎫</div>
+                <h3 style="font-size:1.2rem;margin-bottom:0.5rem">APSRTC One Day Pass — ₹100</h3>
+                <p style="color:var(--text-secondary);font-size:0.9rem;max-width:600px;margin:0 auto">
+                    Unlimited travel on all <strong>City Ordinary</strong> buses for a full day. If you plan to travel
+                    more than ₹100 worth of travel in a day, the Day Pass saves you money.
+                    Our Route Finder automatically suggests this when your trip fares exceed ₹100!
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     SMART TIPS
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="smart-tips" class="section-py" aria-label="Smart travel tips">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="tips">Smart Tips</p>
+                <h2>Travel Smarter,<br />Spend Less</h2>
+                <p>Insider tips to save time, money, and avoid the rush on Vizag city buses.</p>
+            </div>
+
+            <div class="tips-cards">
+                <div class="tip-card fade-up">
+                    <span class="tip-icon">💰</span>
+                    <h3>Save on Fare</h3>
+                    <p>If you're making multiple trips in a day totalling over ₹100, buy the <strong>APSRTC One Day
+                            Pass</strong> for unlimited rides. Seniors citizens get 50% off with valid ID.</p>
+                </div>
+                <div class="tip-card fade-up">
+                    <span class="tip-icon">⏰</span>
+                    <h3>Beat the Rush</h3>
+                    <p>Peak hours are <strong>7–9 AM</strong> and <strong>5–7 PM</strong>. Try to board a stop earlier
+                        than usual so you're guaranteed a seat before buses fill up.</p>
+                </div>
+                <div class="tip-card fade-up">
+                    <span class="tip-icon">🚍</span>
+                    <h3>Choose Metro Express</h3>
+                    <p>For important journeys, pay the small premium for <strong>Metro Express</strong> — you'll arrive
+                        20–30% faster and with far less crowding.</p>
+                </div>
+                <div class="tip-card fade-up">
+                    <span class="tip-icon">📍</span>
+                    <h3>Board at Jagadamba</h3>
+                    <p><strong>Jagadamba Centre</strong> is Vizag's main bus hub — virtually every route passes through
+                        it. If confused, go there and find your bus with ease.</p>
+                </div>
+                <div class="tip-card fade-up">
+                    <span class="tip-icon">🔄</span>
+                    <h3>Plan Return Journey</h3>
+                    <p>Check the <strong>last bus timing</strong> on your route before you travel — especially for
+                        routes to Bheemunipatnam and Anakapalli where last buses run early.</p>
+                </div>
+                <div class="tip-card fade-up">
+                    <span class="tip-icon">📲</span>
+                    <h3>Carry Exact Change</h3>
+                    <p>Bus conductors often run short on change. Keep small denomination coins and notes handy for
+                        smoother boarding — especially for fares under ₹20.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     COMMUNITY
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="community" class="section-py" aria-label="Community reports">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="community">Community</p>
+                <h2>Help Fellow<br />Commuters</h2>
+                <p>Spotted a diversion, accident, or road work? Report it and help thousands of Vizag commuters travel
+                    better.</p>
+            </div>
+
+            <div class="community-inner">
+                <!-- Report Form -->
+                <div class="community-form-area">
+                    <h3 style="font-size:1.05rem;font-weight:700;margin-bottom:1.25rem">📋 Submit a Route Report</h3>
+
+                    <div id="loginNote"
+                        style="display:flex;align-items:center;gap:8px;font-size:0.82rem;color:var(--text-secondary);margin-bottom:1rem;background:rgba(255,107,53,0.08);border:1px solid rgba(255,107,53,0.2);border-radius:var(--radius-sm);padding:0.6rem 0.9rem">
+                        🔐 <span data-i18n="loginRequired">Please login to submit a community report.</span>
+                    </div>
+                    <div id="loggedNote"
+                        style="display:none;align-items:center;gap:8px;font-size:0.82rem;color:var(--primary);margin-bottom:1rem;background:rgba(0,212,170,0.08);border:1px solid rgba(0,212,170,0.2);border-radius:var(--radius-sm);padding:0.6rem 0.9rem">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reportType">Report Type</label>
+                        <select class="form-control" id="reportType">
+                            <option value="">-- Select type --</option>
+                            <option value="Diversion">🔄 Route Diversion</option>
+                            <option value="Road Work">🚧 Road Work / Construction</option>
+                            <option value="Accident">⚠️ Accident / Traffic Jam</option>
+                            <option value="Bus Info">🚌 Bus Information Update</option>
+                            <option value="Stop Info">📍 Bus Stop Information</option>
+                            <option value="Other">💬 Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reportRoute">Bus Route (optional)</label>
+                        <select class="form-control" id="reportRoute">
+                            <option value="">-- Select route (optional) --</option>
+                            <option value="28C">Bus 28C – Steel Plant → Jagadamba</option>
+                            <option value="28P">Bus 28P – Steel Plant → Jagadamba (Metro)</option>
+                            <option value="222">Bus 222 – Bheemunipatnam → Jagadamba</option>
+                            <option value="400">Bus 400 – Pendurthi → Gajuwaka</option>
+                            <option value="38H">Bus 38H – RK Beach → Gajuwaka</option>
+                            <option value="900">Bus 900 – Beach Road Express (Metro)</option>
+                            <option value="5C">Bus 5C – Simhachalam → RK Beach</option>
+                            <option value="99">Bus 99 – Rushikonda → Jagadamba (Metro)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="reportMessage">Your Report</label>
+                        <textarea class="form-control" id="reportMessage" rows="4"
+                            placeholder="Describe what you observed — location, time, impact on bus services..."></textarea>
+                    </div>
+                    <button class="btn btn-secondary" id="reportSubmitBtn" style="width:100%">
+                        🔐 Login to Report
+                    </button>
+                </div>
+
+                <!-- Recent Reports -->
+                <div class="recent-reports">
+                    <h3 style="font-size:1rem;font-weight:700;margin-bottom:1.25rem">📡 Recent Community Reports</h3>
+                    <div id="recentReports">
+                        <div class="report-item">
+                            <div class="report-meta">
+                                <span class="report-type-badge">Road Work</span>
+                                <span class="report-route">Bus 400</span>
+                                <span>• 25 mins ago • ravi_vizag</span>
+                            </div>
+                            <div class="report-content">PVNR Expressway toll area — slow moving traffic due to road
+                                widening work. Bus 400 is delayed by ~20 mins.</div>
+                        </div>
+                        <div class="report-item">
+                            <div class="report-meta">
+                                <span class="report-type-badge">Bus Info</span>
+                                <span class="report-route">Bus 222</span>
+                                <span>• 1 hr ago · priya_mvp</span>
+                            </div>
+                            <div class="report-content">Bus 222 from Bheemunipatnam is running on time today. Good crowd
+                                levels in the morning. Seats available.</div>
+                        </div>
+                        <div class="report-item">
+                            <div class="report-meta">
+                                <span class="report-type-badge">Diversion</span>
+                                <span class="report-route">Bus 38H</span>
+                                <span>• 3 hrs ago • suresh_gvk</span>
+                            </div>
+                            <div class="report-content">38H taking alternate route at Kancharapalem — road repair
+                                ongoing. Add 10 extra minutes to your journey.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     CHATBOT
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="chatbot-section" class="section-py" aria-label="AI chatbot assistant">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="chatbot">Chat Assistant</p>
+                <h2>Ask MārgaDarshi<br />Anything</h2>
+                <p>Get instant answers in English, Telugu, or Hindi — by typing or speaking.</p>
+            </div>
+
+            <div class="chatbot-container" role="log" aria-label="Chatbot conversation">
+                <div class="chatbot-header">
+                    <div class="chatbot-avatar" aria-hidden="true">🚌</div>
+                    <div class="chatbot-header-info">
+                        <h3>MārgaDarshi Assistant</h3>
+                        <div class="chatbot-status">Online — Ready to help</div>
+                    </div>
+                    <div style="margin-left:auto;display:flex;gap:0.5rem">
+                        <span class="badge" style="font-size:0.7rem">EN</span>
+                        <span class="badge"
+                            style="font-size:0.7rem;color:#c4b5fd;border-color:rgba(124,92,255,0.3)">తె</span>
+                        <span class="badge"
+                            style="font-size:0.7rem;color:#fb923c;border-color:rgba(255,107,53,0.3)">हि</span>
+                    </div>
+                </div>
+
+                <div class="chat-messages" id="chatMessages" aria-live="polite"></div>
+
+                <!-- Quick Suggestions -->
+                <div class="chat-suggestions" aria-label="Quick question suggestions">
+                    <button class="chat-suggestion-chip">🏖️ Bus to RK Beach?</button>
+                    <button class="chat-suggestion-chip">🎫 What is One Day Pass?</button>
+                    <button class="chat-suggestion-chip">⏰ When is peak hour?</button>
+                    <button class="chat-suggestion-chip">🚍 Metro vs Ordinary?</button>
+                    <button class="chat-suggestion-chip">🏔️ Bus to Kailasagiri?</button>
+                </div>
+
+                <div class="chat-input-area">
+                    <button class="chat-voice-btn" id="chatVoiceBtn" aria-label="Voice input"
+                        title="Speak your question">🎤</button>
+                    <input type="text" class="chat-input" id="chatInput"
+                        placeholder="Ask about buses, routes, fares, tourist spots..." aria-label="Chat message input"
+                        autocomplete="off" maxlength="200" />
+                    <button class="chat-send-btn" id="chatSendBtn" aria-label="Send message">➤</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     FAQ
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <section id="faq" class="section-py" aria-label="Frequently asked questions">
+        <div class="container">
+            <div class="section-header">
+                <p class="eyebrow" data-i18n="faq">FAQ</p>
+                <h2>Frequently Asked<br />Questions</h2>
+            </div>
+
+            <div class="faq-list" role="list">
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" aria-expanded="false">
+                        What is the APSRTC One Day Pass and how do I get it?
+                        <span class="faq-chevron" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The APSRTC One Day Pass costs ₹50 and allows unlimited travel on all City Ordinary buses
+                            across Visakhapatnam for a single day. You can buy it directly from the conductor when you
+                            board your first bus, or at the Jagadamba bus station ticket counter. It's valid only on
+                            City Ordinary (CO) buses, not Metro Express.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" aria-expanded="false">
+                        What is the difference between City Ordinary and Metro Express buses?
+                        <span class="faq-chevron" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>City Ordinary (CO) buses stop at every designated stop along their route — they're cheaper
+                            (fare starts at ₹7) but slower. Metro Express (ME) buses stop only at major stops — they're
+                            10–20% costlier but significantly faster and less crowded. Both are operated by APSRTC. If
+                            you're in a hurry, Metro Express is the better choice. For budget travel, City Ordinary
+                            wins.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" aria-expanded="false">
+                        Is the timetable on MārgaDarshi accurate?
+                        <span class="faq-chevron" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The times shown are the official APSRTC scheduled departure times. However, actual bus
+                            arrival times can vary due to traffic congestion, road works, diversions, or mechanical
+                            issues. We always show a disclaimer for this reason. For critical journeys, arrive at the
+                            stop a few minutes early and rely on community reports for real-time updates.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" aria-expanded="false">
+                        How do I get student or senior citizen concession on APSRTC buses?
+                        <span class="faq-chevron" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Students and senior citizens are entitled to a 50% fare concession on all APSRTC city buses.
+                            Students must carry a valid school or college ID card. Senior citizens (60+) must carry any
+                            valid government-issued age proof such as Aadhar card. Inform the conductor before they
+                            issue your ticket.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" aria-expanded="false">
+                        How do I submit a community report? Why do I need to login?
+                        <span class="faq-chevron" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Login is required to submit community reports to prevent spam and ensure the reliability of
+                            information shared with fellow commuters. Simply click "Login to Report" in the Community
+                            section and sign in with your email. Once logged in, you can report route diversions, road
+                            work, accidents, or any useful bus information for other users.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" aria-expanded="false">
+                        What are the peak hours for Vizag city buses?
+                        <span class="faq-chevron" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Peak hours in Visakhapatnam are typically 7:00 AM – 9:00 AM (morning office/school rush) and
+                            5:00 PM – 7:00 PM (evening return rush). During these times, all buses — especially on
+                            routes like 28C, 38H, and 400 — will be heavily crowded. If possible, travel before 7 AM or
+                            between 10 AM–4 PM for the most comfortable experience.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" role="listitem">
+                    <button class="faq-question" aria-expanded="false">
+                        Will MārgaDarshi expand to other cities in Andhra Pradesh?
+                        <span class="faq-chevron" aria-hidden="true">▼</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Visakhapatnam is our pilot city. We plan to expand to other major cities in Andhra
+                            Pradesh and Telangana in future versions. Community support and feedback from Vizag users
+                            will help us build a better product for all cities. Stay tuned and share MārgaDarshi with
+                            fellow commuters!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <footer role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="brand-name">🚌 MārgaDarshi</div>
+                    <p>Your smart bus guide for Visakhapatnam — helping commuters find the right bus, save money, and
+                        travel with confidence.</p>
+                    <div style="margin-top:1.25rem;display:flex;gap:0.5rem;flex-wrap:wrap">
+                        <span class="badge">Vizag First</span>
+                        <span class="badge" style="color:#c4b5fd;border-color:rgba(124,92,255,0.3)">APSRTC Data</span>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#route-finder">🔍 Route Finder</a></li>
+                        <li><a href="#tourist">🏛️ Tourist Spots</a></li>
+                        <li><a href="#timetable">🕐 Timetable</a></li>
+                        <li><a href="#map-section">🗺️ Bus Map</a></li>
+                        <li><a href="#smart-tips">💡 Travel Tips</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#chatbot-section">🤖 AI Chatbot</a></li>
+                        <li><a href="#community">📢 Community Reports</a></li>
+                        <li><a href="#bus-types">🚍 Bus Types Guide</a></li>
+                        <li><a href="#faq">❓ FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#features">About MārgaDarshi</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#faq">Privacy Policy</a></li>
+                        <li><a href="#faq">Terms of Use</a></li>
+                        <li><a href="#community">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 MārgaDarshi. Built with ❤️ for Visakhapatnam commuters.</p>
+                <p class="footer-legal">Bus data sourced from APSRTC. Times are approximate. Not an official APSRTC
+                    product.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     FLOATING CHAT BUTTON
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <button class="chat-fab" onclick="scrollToChat()" aria-label="Open chatbot assistant"
+        title="Chat with MārgaDarshi AI">
+        🤖
+        <span class="chat-fab-badge" aria-hidden="true">!</span>
+    </button>
+
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     LOGIN MODAL
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal modal-relative">
+            <button class="modal-close" id="closeModal" aria-label="Close login dialog">✕</button>
+            <div class="modal-logo">🔐</div>
+            <h2 id="modalTitle">Login to MārgaDarshi</h2>
+            <p>Join the community and help fellow Vizag commuters with real-time updates.</p>
+
+            <div class="social-login">
+                <button class="social-btn"
+                    onclick="document.getElementById('loginEmail').value='user@google.com';document.getElementById('loginForm').dispatchEvent(new Event('submit'))">
+                    <span>🌐</span> Continue with Google
+                </button>
+            </div>
+
+            <div class="or-divider">or</div>
+
+            <form id="loginForm">
+                <div class="form-group" style="margin-bottom:0.75rem">
+                    <label for="loginEmail"
+                        style="display:block;font-size:0.8rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:5px">Email
+                        Address</label>
+                    <input type="email" id="loginEmail" class="form-control" placeholder="your@email.com" required />
+                </div>
+                <div class="form-group" style="margin-bottom:1.25rem">
+                    <label for="loginPassword"
+                        style="display:block;font-size:0.8rem;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-secondary);margin-bottom:5px">Password</label>
+                    <input type="password" id="loginPassword" class="form-control" placeholder="••••••••" />
+                </div>
+                <button type="submit" class="btn btn-primary" style="width:100%">Login & Continue</button>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- ═══════ FLOATING TIPS BUTTON ═══════ -->
+    <button id="openTipsBtn" class="tips-bulb-btn" aria-label="Open Smart Tips" title="Smart Tips">
+        💡 Tips
+    </button>
+
+    <!-- ═══════ SIDE BUBBLE FOR TIPS & JOURNEY ═══════ -->
+    <div id="sideBubble" class="side-bubble" aria-hidden="true">
+        <button id="closeSideBubble" class="bubble-close-btn" aria-label="Close">✕</button>
+        <div class="bubble-content" id="sideBubbleContent">
+            <!-- Dynamic Content -->
+        </div>
+    </div>
+
+    <!-- ═══════ BUS SEARCH MODAL ═══════ -->
+    <div class="modal-overlay" id="busSearchModal" role="dialog" aria-modal="true"
+        aria-labelledby="busSearchModalTitle">
+        <div class="modal modal-relative" style="max-width: 600px;">
+            <button class="modal-close" id="closeBusSearchModal" aria-label="Close Bus Search dialog">✕</button>
+            <h2 id="busSearchModalTitle" style="display:flex; align-items:center; gap:0.5rem;"><span
+                    style="font-size:1.5rem">🔍</span> Know Your Bus</h2>
+            <p>Type a Visakhapatnam bus number to see its full route.</p>
+
+            <div class="form-group" style="margin-top:1.5rem; margin-bottom:1rem;">
+                <input type="text" id="busNumberInput" class="form-control" placeholder="e.g. 28Z/H, 400K, 69H"
+                    style="font-size: 1.1rem; padding: 1rem;" autocomplete="off" />
+            </div>
+
+            <div id="busSearchModal_results" style="margin-top: 1.5rem; max-height: 400px; overflow-y: auto;">
+                <!-- Results populate here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════ SMART TIPS MODAL ═══════ -->
+    <div class="modal-overlay" id="smartTipsModal" role="dialog" aria-modal="true" aria-labelledby="tipsModalTitle">
+        <div class="modal modal-relative"
+            style="max-width: 700px; background: var(--bg-card); border: 1px solid var(--border-brand);">
+            <button class="modal-close" id="closeTipsModal" aria-label="Close Tips dialog">✕</button>
+            <h2 id="tipsModalTitle"
+                style="background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary)); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                💡 Smart Tips</h2>
+            <p>Travel Smarter, Spend Less on Vizag city buses.</p>
+
+            <div class="tips-cards"
+                style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem;">
+                <div class="tip-card"
+                    style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: var(--radius);">
+                    <span style="font-size:2rem;display:block;margin-bottom:0.5rem;">💰</span>
+                    <h3 style="margin-bottom:0.5rem;">Save on Fare</h3>
+                    <p style="font-size:0.9rem;color:var(--text-secondary);">If you're making multiple trips in a day
+                        totalling over ₹100, buy the <strong>APSRTC One Day Pass</strong> for unlimited rides.</p>
+                </div>
+                <div class="tip-card"
+                    style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: var(--radius);">
+                    <span style="font-size:2rem;display:block;margin-bottom:0.5rem;">⏰</span>
+                    <h3 style="margin-bottom:0.5rem;">Beat the Rush</h3>
+                    <p style="font-size:0.9rem;color:var(--text-secondary);">Peak hours are <strong>7–9 AM</strong> and
+                        <strong>5–7 PM</strong>. Try to board a stop earlier than usual so you're guaranteed a seat.
+                    </p>
+                </div>
+                <div class="tip-card"
+                    style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: var(--radius);">
+                    <span style="font-size:2rem;display:block;margin-bottom:0.5rem;">🚍</span>
+                    <h3 style="margin-bottom:0.5rem;">Choose Metro Express</h3>
+                    <p style="font-size:0.9rem;color:var(--text-secondary);">For important journeys, pay the small
+                        premium for <strong>Metro Express</strong> — you'll arrive 20–30% faster.</p>
+                </div>
+                <div class="tip-card"
+                    style="background: rgba(255,255,255,0.03); padding: 1.5rem; border-radius: var(--radius);">
+                    <span style="font-size:2rem;display:block;margin-bottom:0.5rem;">📲</span>
+                    <h3 style="margin-bottom:0.5rem;">Carry Exact Change</h3>
+                    <p style="font-size:0.9rem;color:var(--text-secondary);">Bus conductors often run short on change.
+                        Keep small denomination coins and notes handy for smoother boarding.</p>
+                </div>
+            </div>
+
+            <button class="btn btn-outline" id="openKnowYourBusBtn" style="width: 100%; margin-top: 2rem;">Compare City
+                Ordinary vs Metro Express</button>
+        </div>
+    </div>
+
+    <!-- ═══════ KNOW YOUR BUS MODAL ═══════ -->
+    <div class="modal-overlay" id="knowYourBusModal" role="dialog" aria-modal="true"
+        aria-labelledby="knowBusModalTitle">
+        <div class="modal modal-relative" style="max-width: 800px; padding: 2.5rem;">
+            <button class="modal-close" id="closeKnowBusModal" aria-label="Close Know Your Bus dialog">✕</button>
+            <h2 id="knowBusModalTitle">Compare Bus Types</h2>
+            <p style="margin-bottom: 2rem;">Vizag has two types of APSRTC city buses — choose the right one for your
+                journey.</p>
+
+            <div class="bus-types-grid"
+                style="display:grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div class="card bus-type-card co"
+                    style="background: rgba(0, 85, 255, 0.05); border: 1px solid rgba(0, 119, 255, 0.2);">
+                    <div class="bus-type-header"
+                        style="display:flex; align-items:center; gap:1rem; border-bottom: 1px solid var(--border-light); padding-bottom: 1rem; margin-bottom: 1rem;">
+                        <span style="font-size:2rem;">🚌</span>
+                        <div>
+                            <h3 style="margin:0;">City Ordinary</h3>
+                            <div style="font-size:0.8rem; color:var(--text-secondary);">Base fare from ₹7</div>
+                        </div>
+                        <span class="tag tag-co" style="margin-left:auto">CO</span>
+                    </div>
+                    <ul class="bus-type-features"
+                        style="list-style:none; padding:0; margin:0; font-size:0.9rem; color:var(--text-secondary); display:flex; flex-direction:column; gap:0.5rem;">
+                        <li><span style="margin-right:8px;">✅</span> Cheapest option</li>
+                        <li><span style="margin-right:8px;">✅</span> Stops at every designated stop</li>
+                        <li><span style="margin-right:8px;">✅</span> Accepts One Day Pass (₹100)</li>
+                        <li><span style="margin-right:8px;">⚠️</span> Can get crowded in peak hours</li>
+                    </ul>
+                </div>
+
+                <div class="card bus-type-card me"
+                    style="background: rgba(124, 92, 255, 0.05); border: 1px solid rgba(124, 92, 255, 0.2);">
+                    <div class="bus-type-header"
+                        style="display:flex; align-items:center; gap:1rem; border-bottom: 1px solid var(--border-light); padding-bottom: 1rem; margin-bottom: 1rem;">
+                        <span style="font-size:2rem;">🚍</span>
+                        <div>
+                            <h3 style="margin:0;">Metro Express</h3>
+                            <div style="font-size:0.8rem; color:var(--text-secondary);">Base fare from ₹10</div>
+                        </div>
+                        <span class="tag tag-me" style="margin-left:auto">ME</span>
+                    </div>
+                    <ul class="bus-type-features"
+                        style="list-style:none; padding:0; margin:0; font-size:0.9rem; color:var(--text-secondary); display:flex; flex-direction:column; gap:0.5rem;">
+                        <li><span style="margin-right:8px;">✅</span> Faster — skipping smaller stops</li>
+                        <li><span style="margin-right:8px;">✅</span> Better comfort, less crowded</li>
+                        <li><span style="margin-right:8px;">✅</span> Operates on select high-demand routes</li>
+                        <li><span style="margin-right:8px;">⚠️</span> Approx 10–20% higher fare</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════════════
+     SCRIPTS
+     ═══════════════════════════════════════════════════════════════════════ -->
+    <script src="data/vizag_routes.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+
+    <!-- Quick select helper for tourist buttons -->
+    <script>
+        function quickSelectSpot(id) {
+            const sel = document.getElementById('touristSelect');
+            if (sel) { sel.value = id; sel.dispatchEvent(new Event('change')); }
+            document.getElementById('tourist').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+
+</html>

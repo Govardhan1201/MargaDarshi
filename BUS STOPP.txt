@@ -1,0 +1,64 @@
+the below are same stops (the correct name is written in parenthesis) :
+
+Akkayyapalem and Akkayapalem (Akkayyapalem) [17.73625339318663, 83.29979319130885]
+
+Anakapalle and Anakapalli (Anakapalli)
+[17.67480572793532, 83.00072970972529]
+
+Arilova and Arilova colony (Arilova)
+[17.76578115855434, 83.31710178081683]
+
+AU Out gate and Au Outgate (AU Outgate)
+[17.722175894303675, 83.32761265483975]
+
+Convent, Convent Jn and Convent Junction (Convent Jn)
+[17.717637884574902, 83.29023910892546]
+
+elamanchili, elamanchili and Yelamanchili (Yelamanchili)
+[17.546649975636022, 82.85387701193353]
+
+endada and yendada village (Yendada)
+[17.78286239493434, 83.35801591968006]
+
+Gopalpatnam, Gopalapatnam and gpt (Gopalapatnam)
+[17.746640682273533, 83.22134357847699]
+
+Gurudwar and Gurudwara (Gurudwara)
+[17.736752380532323, 83.30731046506783]
+
+kuramannapalem, kurmannapalem, kuramannaplem (Kurmannapalem)
+[17.685525906352943, 83.16847971892675]
+
+Madhurawada, Madhurwada and Madurwada (Madhurawada)
+[17.814423558194008, 83.35635805403801]
+
+Malkapuram And Malkapuram Gajuwaka (Malkapuram)
+[17.688611324791193, 83.24614186832345]
+
+Mvp colony and mvp complex (MVP Colony)
+[17.74155128758011, 83.34346699110982]
+
+Naval base and naval dockyard (Naval Dockyard)
+[17.698343496326277, 83.2693765263235]
+
+Pendurti and Pendhurty (Pendurthi)
+[17.81179726391017, 83.20749884929646]
+
+RK Beach and R K beach (RK Beach)
+[17.71131382255581, 83.3181805829017]
+
+Rtc and RTC Complex (RTC Complex)
+[17.724012695166742, 83.30644972304506]
+
+Scindia and scidia (Scindia)
+[17.68823281500555, 83.26795923551329]
+
+Sector 11 and steelplant sector 11 (Steel plant Sector 11)
+[17.652154177961627, 83.13349009732067]
+
+Simhachalam, Simhachalam Bus station (Simhachalam)
+[17.77186277030809, 83.24356202836081]
+
+Town Kotharoad and Town Kotha Road (Town Kotharoad)
+[17.702142399223977, 83.29654077148736]
+

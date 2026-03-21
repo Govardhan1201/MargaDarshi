@@ -1,0 +1,1587 @@
+
+Bus Route Name : 10A
+Bus Route Starting Stage Name :	Visakhapatnam Airport
+Bus Route Ending Stage Name :	R K Beach
+Total Distance : 12 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Visakhapatnam Airport
+2.)	Nad
+3.)	Gurudwara
+4.)	Rtc Complex
+5.)	R K Beach
+
+
+Bus Route Name :	10K
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Kailashagiri
+Total Distance :	9 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Jagadamba
+3.)	Rk Beach
+4.)	Vuda Park
+5.)	Tenneti Park
+6.)	Kailashagiri
+
+
+Bus Route Name :	111
+Bus Route Starting Stage Name :	Kuramanapalem
+Bus Route Ending Stage Name :	Tagarapuvalasa
+Total Distance :	44 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Kuramanapalem
+2.)	Gajuwaka
+3.)	Nad
+4.)	Gurudwara
+5.)	Zoo Park
+6.)	Madurwada
+7.)	Tagarapuvalasa
+
+
+Bus Route Name :	12D
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Devarapalle
+Total Distance :	52 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Nad
+3.)	Gopalapatnam Bus Stop
+4.)	Pendurthi
+5.)	Kothavalasa
+6.)	Anandapuram
+7.)	Devarapalle
+
+
+
+Bus Route Name :	12K
+Bus Route Starting Stage Name :	Town Kotharoad
+Bus Route Ending Stage Name :	Kothavalasa
+Total Distance :	39 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Town Kotharoad
+2.)	Railway Station,
+3.)	Kancharapalem,
+4.)	Nad,
+5.)	Gpt,
+6.)	Pendurthi
+7.)	Kothavalasa
+
+
+Bus Route Name :	14
+Bus Route Starting Stage Name :	Venkojipalem
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	16 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Venkojipalem
+2.)	Mvp Colony,
+3.)	Pedda Waltair
+4.)	Au Outgate,
+5.)	Jagadamba,
+6.)	Town Kotharoad
+7.)	Ohpo
+
+
+
+Bus Route Name :	14A
+Bus Route Starting Stage Name :	Arilova Colony
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	19 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Arilova Colony
+2.)	Venkojipalem,
+3.)	Mvp Colony,
+4.)	Au Out Gate,
+5.)	Jagadamba,
+6.)	Kotha road bus station
+7.)	Ohpo
+
+
+Bus Route Name :	16
+Bus Route Starting Stage Name :	Purna Market
+Bus Route Ending Stage Name :	Yarada
+Total Distance :	8 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Purna Market
+2.)	Convent Junction
+3.)	Scindia
+4.)	Naval Base
+5.)	Yarada
+
+
+Bus Route Name :	16
+Bus Route Starting Stage Name :	Purna Market
+Bus Route Ending Stage Name :	Yarada
+Total Distance :	8 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Purna Market
+2.)	Convent Junction
+3.)	Scindia
+4.)	Naval Base
+5.)	Yarada
+
+
+Bus Route Name :	20A
+Bus Route Starting Stage Name :	Hb Colony
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	14 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Hb Colony
+2.)	Seethamma Dhara Bus Stop
+3.)	Satyam Junction
+4.)	Rtc
+5.)	Jagadamba
+6.)	Town Kotharoad
+7.)	Ohpo
+
+
+Bus Route Name :	211
+Bus Route Starting Stage Name :	Railway Station
+Bus Route Ending Stage Name :	Vizianagaram
+Total Distance :	47 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Railway Station
+2.)	Rtc Complex
+3.)	Maddilapalem
+4.)	Madhurawada
+5.)	Tagarapuvalasa
+6.)	Vizianagaram
+
+
+Bus Route Name :	222
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Tagarapuvalasa
+Total Distance :	29 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Maddilapalem
+3.)	Endada
+4.)	Madhurawada
+5.)	Anandapuram
+6.)	Tagarapuvalasa
+
+
+
+Bus Route Name :	25D/M
+Bus Route Starting Stage Name :	Ohpo
+Bus Route Ending Stage Name :	Midhilapuri Colony
+Total Distance :	23 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Ohpo
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Maddilapalem
+5.)	Endada
+6.)	Carshed
+7.)	Midhilapuri Colony
+
+
+
+Bus Route Name :	25D/V
+Bus Route Starting Stage Name :	Ohpo
+Bus Route Ending Stage Name :	
+Total Distance :	21 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Ohpo
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Maddilapalem
+5.)	Endada
+6.)	Carshed
+
+
+
+Bus Route Name :	25E
+Bus Route Starting Stage Name :	Ohpo
+Bus Route Ending Stage Name :	Kommadi
+Total Distance :	28 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Ohpo
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Maddilapalem
+5.)	Endada
+6.)	Madhurawada
+7.)	Kommadi
+
+
+
+Bus Route Name :	25G
+Bus Route Starting Stage Name :	Ohpo
+Bus Route Ending Stage Name :	Ganesh Nagar
+Total Distance :	25 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Ohpo
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Maddilapalem
+5.)	Endada
+6.)	Madhurawada
+7.)	Ganesh Nagar
+
+
+
+Bus Route Name :	25IT
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	It Park
+Total Distance :	14 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Maddilapalem
+3.)	Endada
+4.)	Carshed
+5.)	Midhilapuri Colony
+6.)	It Park
+
+
+
+Bus Route Name :	25J
+Bus Route Starting Stage Name :	Railway Station
+Bus Route Ending Stage Name :	Sevanagar
+Total Distance :	15 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Railway Station
+2.)	Rtc Complex
+3.)	Maddilapalem
+4.)	Endada
+5.)	Madhurawada
+6.)	Sevanagar
+
+
+
+Bus Route Name :	25K
+Bus Route Starting Stage Name :	Ohpo
+Bus Route Ending Stage Name :	Bakkannapalem
+Total Distance :	26 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Ohpo
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Maddilapalem
+5.)	Endada
+6.)	Madhurawada
+7.)	Bakkannapalem
+
+
+Bus Route Name :	25M
+Bus Route Starting Stage Name :	Ohpo
+Bus Route Ending Stage Name :	Marikavalasa
+Total Distance :	23 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Ohpo
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Maddilapalem
+5.)	Endada
+6.)	Madhurawada
+
+
+
+Bus Route Name :	25P
+Bus Route Starting Stage Name :	Ratnagiri Hb Colony
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	23 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Ratnagiri Hb Colony
+2.)	Pm Palem
+3.)	Endada
+4.)	Maddilapalem
+5.)	Rtc Complex
+6.)	Jagadamba
+7.)	Ohpo
+
+
+Bus Route Name :	25R
+Bus Route Starting Stage Name :	Railway Station
+Bus Route Ending Stage Name :	Gurajadanagar
+Total Distance :	16 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Railway Station
+2.)	Rtc Complex
+3.)	Maddilapalem
+4.)	Endada
+5.)	Pm Palem
+6.)	Gurajadanagar
+
+
+
+
+Bus Route Name :	25S
+Bus Route Starting Stage Name :	Ohpo
+Bus Route Ending Stage Name :	Nagarapalem
+Total Distance :	37 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Ohpo
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Maddilapalem
+5.)	Endada
+6.)	Carshed
+7.)	Nagarapalem
+
+
+Bus Route Name :	28
+Bus Route Starting Stage Name :	Rk Beach
+Bus Route Ending Stage Name :	Simhachalam Bus Station
+Total Distance :	12 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rk Beach
+2.)	Jagadamba,
+3.)	Rtc Complex,
+4.)	Nad,
+5.)	Gopalapatnam Bus Stop
+
+
+Bus Route Name :	28A/28K
+Bus Route Starting Stage Name :	Rk Beach
+Bus Route Ending Stage Name :	Pendurthy/Kottavalasa
+Total Distance :	23 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rk Beach
+2.)	Gpt,
+3.)	Nad,
+4.)	Rtc,
+5.)	Jagadamba,
+6.)	Collector Office
+7.)	Pendurthy/Kottavalasa
+
+
+
+Bus Route Name :	28A/D
+Bus Route Starting Stage Name :	Rk Beach
+Bus Route Ending Stage Name :	Denderu
+Total Distance :	27 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rk Beach
+2.)	Jagadamba
+3.)	Rtc
+4.)	Railway Station
+5.)	Nad
+6.)	Gopalapatnam Bus Stop
+7.)	Pendurthi
+8.)	Denderu
+
+
+
+Bus Route Name :	28A/P
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Ravalammapalem
+Total Distance :	26 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Railway Station
+3.)	Kancharapalem
+4.)	Nad
+5.)	Gpt
+6.)	Pendurthi
+7.)	Ravalammapalem
+
+
+
+Bus Route Name :	28C
+Bus Route Starting Stage Name :	Rk Beach
+Bus Route Ending Stage Name :	Chintalagraharam
+Total Distance :	17 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rk Beach
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Nad
+5.)	Gopalapatnam Bus Stop
+6.)	Vepagunta
+7.)	Chintalagraharam
+
+
+Bus Route Name :	28J
+Bus Route Starting Stage Name :	Rk Beach
+Bus Route Ending Stage Name :	Sujatanagar
+Total Distance :	17 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rk Beach
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Nad
+5.)	Gopalapatnam Bus Stop
+6.)	Vepagunta
+7.)	Sujatanagar
+
+
+Bus Route Name :	28P
+Bus Route Starting Stage Name :	Rk Beach
+Bus Route Ending Stage Name :	Sabbavaram
+Total Distance :	28 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rk Beach
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Nad
+5.)	Gopalapatnam Bus Stop
+6.)	Pendurthi
+7.)	Sabbavaram
+
+
+Bus Route Name :	28R
+Bus Route Starting Stage Name :	Rk Beach
+Bus Route Ending Stage Name :	Simhachalam Bus Station
+Total Distance :	13 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rk Beach
+2.)	Jagadamba
+3.)	Rtc
+4.)	Railway Station
+5.)	Nad
+6.)	Gopalapatnam Bus Stop
+7.)	Simhachalam Bus Station
+
+
+Bus Route Name :	28Z/H
+Bus Route Starting Stage Name :	Zilla Parishad
+Bus Route Ending Stage Name :	Simhachalam Hills
+Total Distance :	16 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Zilla Parishad
+2.)	Jagadamba
+3.)	Rtc
+4.)	Gurudwar
+5.)	Nad
+6.)	Gopalapatnam Bus Stop
+7.)	Simhachalam Hills
+
+
+
+Bus Route Name :	300C
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Chodavaram
+Total Distance :	46 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Nad
+3.)	Gopalapatnam Bus Stop
+4.)	Pendurthi
+5.)	Sabbavaram
+6.)	Chodavaram
+
+
+
+Bus Route Name :	300M
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Madugula
+Total Distance :	62 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Nad,
+3.)	Gopalapatnam,
+4.)	Pendurthi,
+5.)	Sabbavaram,
+6.)	Chodavaram
+7.)	Madugula
+
+
+
+Bus Route Name :	328
+Bus Route Starting Stage Name :	K.Kotapad
+Bus Route Ending Stage Name :	Rk Beach
+Total Distance :	66 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	K.Kotapad
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Nad
+5.)	Gopalapatnam Bus Stop
+6.)	Pendurthi
+7.)	Rk Beach
+
+
+Bus Route Name :	333
+Bus Route Starting Stage Name :	Town Kotharoad
+Bus Route Ending Stage Name :	Devarapalle
+Total Distance :	50 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Town Kotharoad
+2.)	Convent
+3.)	Nad
+4.)	Gopalapatnam Bus Stop
+5.)	Pendurthi
+6.)	Kothavalasa
+7.)	Devarapalle
+
+
+
+Bus Route Name :	333K
+Bus Route Starting Stage Name :	Town Kotharoad
+Bus Route Ending Stage Name :	K.Kotapad
+Total Distance :	36 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Town Kotharoad
+2.)	Convent
+3.)	Kancharapalem
+4.)	Nad
+5.)	Gopalapatnam Bus Stop
+6.)	Pendurthi
+7.)	K.Kotapad
+
+
+
+Bus Route Name :	36
+Bus Route Starting Stage Name :	Collector Office
+Bus Route Ending Stage Name :	Mindi
+Total Distance :	16 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Collector Office
+2.)	Town Kotharoad
+3.)	Convent
+4.)	Scindia
+5.)	Gajuwaka
+6.)	Bhpv
+7.)	Mindi
+
+
+Bus Route Name :	38
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Gajuwaka
+Total Distance :	17 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwara,
+3.)	Nad,
+4.)	Bhpv
+5.)	Gajuwaka
+
+
+
+Bus Route Name :	38A
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Mindi
+Total Distance :	16 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwara
+3.)	Nad
+4.)	Bhpv
+5.)	Mindi
+
+
+Bus Route Name :	38B
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Bhanojithota
+Total Distance :	18 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwara
+3.)	Nad
+4.)	Sheelanagar
+5.)	Bhanojithota
+
+
+
+Bus Route Name :	38C
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Sundarayya Colony
+Total Distance :	20 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwara
+3.)	Nad
+4.)	Bhpv
+5.)	Gajuwaka
+6.)	Sundarayya Colony
+
+
+Bus Route Name :	38D
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Nadupur Dairy Colony
+Total Distance :	22 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwara
+3.)	Nad
+4.)	Bhpv
+5.)	Gajuwaka
+6.)	Pedagantyada
+7.)	Nadupur Dairy Colony
+
+
+
+Bus Route Name :	38H
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Gantyada Hb Colony
+Total Distance :	51 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Visakhapatnam Airport
+3.)	Gurudwara
+4.)	Nad
+5.)	Bhpv
+6.)	Gajuwaka
+7.)	Pedagantyada
+8.)	Gantyada Hb Colony
+
+
+
+Bus Route Name :	38IT
+Bus Route Starting Stage Name :	Kurmannapalem
+Bus Route Ending Stage Name :	It Park
+Total Distance :	34 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Kurmannapalem
+2.)	Gajuwaka
+3.)	Nad
+4.)	Gurudwara
+5.)	Rtc Complex
+6.)	Maddilapalem
+7.)	Carshed
+8.)	It Park
+
+
+
+Bus Route Name :	38J
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Janata Colony
+Total Distance :	26 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwara
+3.)	Nad
+4.)	Bhpv
+5.)	Gajuwaka
+6.)	Scindia
+7.)	Janata Colony
+
+
+Bus Route Name :	38K
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Steelplant Sector 5
+Total Distance :	25 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwara
+3.)	Nad
+4.)	Bhpv
+5.)	Gajuwaka
+6.)	Steelplant Sector 5
+
+
+
+Bus Route Name :	38M
+Bus Route Starting Stage Name :	Marikavalasa
+Bus Route Ending Stage Name :	Kurmannapalem
+Total Distance :	33 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Marikavalasa
+2.)	Madhurawada
+3.)	Maddilapalem
+4.)	Gurudwara
+5.)	Nad
+6.)	Bhpv
+7.)	Gajuwaka
+8.)	Kurmannapalem
+
+
+Bus Route Name :	38N
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Nadupuru
+Total Distance :	21 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwara
+3.)	Nad
+4.)	Bhpv
+5.)	Gajuwaka
+6.)	Pedagantyada
+7.)	Nadupuru
+
+
+Bus Route Name :	38R
+Bus Route Starting Stage Name :	Maddilapalem
+Bus Route Ending Stage Name :	Rambilli
+Total Distance :	54 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Maddilapalem
+2.)	Gurudwara
+3.)	Nad
+4.)	Bhpv
+5.)	Parawada
+6.)	Rambilli
+
+
+Bus Route Name :	38T
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Steelplant Sector 11
+Total Distance :	27 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwara
+3.)	Nad
+4.)	Bhpv
+5.)	Gajuwaka
+6.)	Kurmannaplem
+7.)	Steelplant Sector 11
+
+
+Bus Route Name :	38Y
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Duvvada Railway Station
+Total Distance :	24 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwara
+3.)	Nad
+4.)	Bhpv
+5.)	Gajuwaka
+6.)	Kurmannapalem
+7.)	Duvvada Railway Station
+
+
+Bus Route Name :	400
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Kurmannapalem
+Total Distance :	16 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Railway Station
+3.)	Scindia
+4.)	Malkapuram
+5.)	Gajuwaka
+6.)	Kurmannapalem
+
+
+Bus Route Name :	400H
+Bus Route Starting Stage Name :	Maddilapalem
+Bus Route Ending Stage Name :	Gantyada Hb Colony
+Total Distance :	31 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Maddilapalem
+2.)	Rtc
+3.)	Railway Station
+4.)	Scindia
+5.)	Gajuwaka
+6.)	Pedagantyada
+7.)	Gantyada Hb Colony
+
+
+Bus Route Name :	400K
+Bus Route Starting Stage Name :	Maddilapalem
+Bus Route Ending Stage Name :	Duvvada Railway Station
+Total Distance :	21 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Maddilapalem
+2.)	Rtc
+3.)	Railway Station
+4.)	Scindia
+5.)	Gajuwaka
+6.)	Kurmannapalem
+7.)	Duvvada Railway Station
+
+
+
+Bus Route Name :	400N
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Vadacheepurupalli
+Total Distance :	85 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Railway Station
+3.)	Scindia
+4.)	Malkapuram
+5.)	Gajuwaka
+6.)	Kurmannapalem
+7.)	Sector 11
+8.)	Parawada
+9.)	Ntpc
+10.)	Vadacheepurupalli
+
+
+
+Bus Route Name :	400S
+Bus Route Starting Stage Name :	Maddilapalem
+Bus Route Ending Stage Name :	Narava
+Total Distance :	25 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Maddilapalem
+2.)	Rtc Complex
+3.)	Railway Station
+4.)	Scindia
+5.)	Gajuwaka
+6.)	Kurmannapalem
+7.)	Narava
+
+
+Bus Route Name :	400Y
+Bus Route Starting Stage Name :	Maddilapalem
+Bus Route Ending Stage Name :	Yelamanchili
+Total Distance :	55 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Maddilapalem
+2.)	Rtc
+3.)	Railway Station
+4.)	Scindia
+5.)	Gajuwaka
+6.)	Achutapuram
+7.)	Yelamanchili
+
+
+Bus Route Name :	48
+Bus Route Starting Stage Name :	Madhavadhara
+Bus Route Ending Stage Name :	Mn Club
+Total Distance :	9 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Madhavadhara
+2.)	Muralinagar
+3.)	Kailasapuram
+4.)	Akkayyapalem
+5.)	Rtc Complex
+6.)	Jagadamba
+7.)	Mn Club
+
+
+Bus Route Name :	48A
+Bus Route Starting Stage Name :	Madhavadhara
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	17 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Madhavadhara
+2.)	Muralinagar
+3.)	Kailasapuram
+4.)	Akkayapalem
+5.)	Rtc Complex
+6.)	Town Kotharoad
+7.)	Ohpo
+
+
+Bus Route Name :	500
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Anakapalle
+Total Distance :	38 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwar
+3.)	Nad
+4.)	Gajuwaka
+5.)	Kurmannapalem
+6.)	Aganampudi
+7.)	Anakapalle
+
+
+
+Bus Route Name :	500A
+Bus Route Starting Stage Name :	Maddilapalem
+Bus Route Ending Stage Name :	Addaroad
+Total Distance :	77 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Maddilapalem
+2.)	Gurudwar
+3.)	Nad
+4.)	Gajuwaka
+5.)	Kurmannaplem
+6.)	Anakapalli
+7.)	Elamanchili
+8.)	Addaroad
+
+
+Bus Route Name :	500A/C
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Achutapuram
+Total Distance :	52 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwar
+3.)	Nad
+4.)	Gajuwaka
+5.)	Kurmannapalem
+6.)	Anakapalle
+7.)	Achutapuram
+
+
+Bus Route Name :	500P
+Bus Route Starting Stage Name :	Anakapalle
+Bus Route Ending Stage Name :	Pm Palem
+Total Distance :	45 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Anakapalle
+2.)	Kurmannapalem
+3.)	Gajuwaka
+4.)	Scindia
+5.)	Convent
+6.)	Rtc Complex
+7.)	Maddilapalem
+8.)	Carshed
+9.)	Pm Palem
+
+
+Bus Route Name :	500Y
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Yelamanchili
+Total Distance :	59 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwar
+3.)	Nad
+4.)	Gajuwaka
+5.)	Kurmannapalem
+6.)	Anakapalle
+7.)	Yelamanchili
+
+
+
+Bus Route Name :	505
+Bus Route Starting Stage Name :	Simhachalam
+Bus Route Ending Stage Name :	Scindia
+Total Distance :	22 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Simhachalam
+2.)	Gopalapatnam Bus Stop
+3.)	Nad
+4.)	Kancharapalem
+5.)	Convent Jn
+6.)	Naval Dockyard
+7.)	Scindia
+
+
+Bus Route Name :	52D
+Bus Route Starting Stage Name :	Ravindra Nagar
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	17 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Ravindra Nagar
+2.)	Adarsha Nagar
+3.)	Maddilapalem
+4.)	Rtc
+5.)	Jagadamba
+6.)	Town Kotharoad
+7.)	Ohpo
+
+
+Bus Route Name :	52E
+Bus Route Starting Stage Name :	Yendada Village
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	25 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Yendada Village
+2.)	Rushikonda
+3.)	Endada
+4.)	Maddilapalem
+5.)	Rtc
+6.)	Jagadamba
+7.)	Town Kotharoad
+8.)	Ohpo
+
+
+Bus Route Name :	52S/52V
+Bus Route Starting Stage Name :	Sagar Nagar
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	18 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Sagar Nagar
+2.)	Visalakshi Nagar
+3.)	Maddilapalem
+4.)	Rtc
+5.)	Jagadamba
+6.)	Town Kotharoad
+7.)	Ohpo
+
+
+Bus Route Name :	540
+Bus Route Starting Stage Name :	Mvp Complex
+Bus Route Ending Stage Name :	Simhachalam
+Total Distance :	14 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Mvp Complex
+2.)	Maddilapalem
+3.)	Gurudwara
+4.)	Nad
+5.)	Gopalapatnam Bus Stop
+6.)	Simhachalam
+
+
+Bus Route Name :	540M
+Bus Route Starting Stage Name :	Mvp Complex
+Bus Route Ending Stage Name :	Gajuwaka
+Total Distance :	18 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Mvp Complex
+2.)	Maddilapalem
+3.)	Gurudwara
+4.)	Nad
+5.)	Bhpv
+6.)	Gajuwaka
+
+
+
+Bus Route Name :	541
+Bus Route Starting Stage Name :	Maddilapalem
+Bus Route Ending Stage Name :	Kothavalasa
+Total Distance :	39 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Maddilapalem
+2.)	Gurudwara
+3.)	Nad
+4.)	Gopalapatnam Bus Stop
+5.)	Vepagunta
+6.)	Pendurthi
+7.)	Kothavalasa
+
+
+
+Bus Route Name :	55
+Bus Route Starting Stage Name :	Simhachalam
+Bus Route Ending Stage Name :	Scindia
+Total Distance :	19 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Simhachalam
+2.)	Gopalapatnam Bus Stop
+3.)	Nad
+4.)	Bhpv
+5.)	Gajuwaka
+6.)	Malkapuram
+7.)	Scindia
+
+
+Bus Route Name :	555
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Chodavaram
+Total Distance :	47 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Gurudwar
+3.)	Nad
+4.)	Gopalapatnam Bus Stop
+5.)	Pendurthi
+6.)	Sabbavaram
+7.)	Chodavaram
+
+
+Bus Route Name :	55K
+Bus Route Starting Stage Name :	Kothavalasa
+Bus Route Ending Stage Name :	Scindia
+Total Distance :	43 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Kothavalasa
+2.)	Pendurthi
+3.)	Gopalapatnam Bus Stop
+4.)	Nad
+5.)	Gajuwaka
+6.)	Malkapuram
+7.)	Scindia
+
+
+Bus Route Name :	55T
+Bus Route Starting Stage Name :	Scindia
+Bus Route Ending Stage Name :	Tagarapuvalasa
+Total Distance :	44 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Scindia
+2.)	Malkapuram Gajuwaka
+3.)	Nad
+4.)	Gopalpatnam
+5.)	Pendurthy
+6.)	Anandapuram
+7.)	Tagarapuvalasa
+
+
+Bus Route Name :	55V
+Bus Route Starting Stage Name :	Vepada
+Bus Route Ending Stage Name :	Scindia
+Total Distance :	48 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Vepada
+2.)	Simhachalam
+3.)	Gopalapatnam Bus Stop
+4.)	Nad
+5.)	Gajuwaka
+6.)	Malkapuram
+7.)	Scindia
+
+
+Bus Route Name :	5D
+Bus Route Starting Stage Name :	Town Kotharoad
+Bus Route Ending Stage Name :	Dabbanda
+Total Distance :	23 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Town Kotharoad
+2.)	Convent
+3.)	Kancharapalem
+4.)	Nad
+5.)	Gopalapatnam Bus Stop
+6.)	Pendurthi
+7.)	Dabbanda
+
+
+Bus Route Name :	6
+Bus Route Starting Stage Name :	Simhachalam
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	21 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Simhachalam
+2.)	Gopalapatnam Bus Stop
+3.)	Nad
+4.)	Kancharapalem
+5.)	Convent Junction
+6.)	Town Kotharoad
+7.)	Ohpo
+
+
+Bus Route Name :	60
+Bus Route Starting Stage Name :	Simhachalam
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	23 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Simhachalam
+2.)	Adavivaram
+3.)	Maddilapalem
+4.)	Rtc Complex
+5.)	Jagadamba
+6.)	Ohpo
+
+
+Bus Route Name :	600
+Bus Route Starting Stage Name :	Anakapalle
+Bus Route Ending Stage Name :	Simhachalam
+Total Distance :	34 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Anakapalle
+2.)	Aganampudi
+3.)	Kurmannapalem
+4.)	Gajuwaka
+5.)	Nad
+6.)	Gopalapatnam Bus Stop
+7.)	Simhachalam
+
+
+Bus Route Name :	600C
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Anakapalle
+Total Distance :	34 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Railway Station
+3.)	Convent
+4.)	Gajuwaka
+5.)	Kurmannapalem
+6.)	Aganampudi
+7.)	Anakapalle
+
+
+
+Bus Route Name :	60C
+Bus Route Starting Stage Name :	Arilova Colony
+Bus Route Ending Stage Name :	Ohpo
+Total Distance :	16 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Arilova Colony
+2.)	Maddilapalem
+3.)	Rtc Complex
+4.)	Jagadamba
+5.)	Town Kotharoad
+6.)	Ohpo
+
+
+Bus Route Name :	60R
+Bus Route Starting Stage Name :	Rk Beach
+Bus Route Ending Stage Name :	Arilova Colony
+Total Distance :	8 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rk Beach
+2.)	Jagadamba
+3.)	Rtc Complex
+4.)	Maddilapalem
+5.)	Arilova Colony
+
+
+Bus Route Name :	63
+Bus Route Starting Stage Name :	Rk Beach
+Bus Route Ending Stage Name :	Dibbapalem
+Total Distance :	15 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rk Beach
+2.)	Town Kotharoad
+3.)	Convent
+4.)	Scindia
+5.)	Gajuwaka
+6.)	Pedagantyada
+
+
+Bus Route Name :	64A
+Bus Route Starting Stage Name :	Collector Office
+Bus Route Ending Stage Name :	Swayambuvaram
+Total Distance :	31 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Collector Office
+2.)	Jagadamba
+3.)	Town Kotharoad
+4.)	Convent
+5.)	Scindia
+6.)	Gajuwaka
+7.)	Swayambuvaram
+
+
+
+Bus Route Name :	65F
+Bus Route Starting Stage Name :	Fishing Harbour
+Bus Route Ending Stage Name :	Gangavaram
+Total Distance :	45 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Fishing Harbour
+2.)	Collector Office
+3.)	Jagadamba
+4.)	Town Kotharoad
+5.)	Convent
+6.)	Scindia
+7.)	Gajuwaka
+8.)	Pedagantyada
+9.)	Dibbapalem
+10.)	Gangavaram
+
+
+Bus Route Name :	68/68K
+Bus Route Starting Stage Name :	Rk Beach
+Bus Route Ending Stage Name :	
+Total Distance :	38 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rk Beach
+2.)	Jagadamba
+3.)	Asilmetta
+4.)	Maddilapalem
+5.)	Arilova
+6.)	Simhachalam
+7.)	Kothavalasa
+
+
+Bus Route Name :	69
+Bus Route Starting Stage Name :	Arilova Colony
+Bus Route Ending Stage Name :	Railway Station
+Total Distance :	5 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Arilova Colony
+2.)	Hb Colony
+3.)	Seethamma Dhara Bus Stop
+4.)	Satyam Junction
+5.)	Rtc Complex
+
+
+Bus Route Name :	6A/H
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Simhachalam Hills
+Total Distance :	13 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Railway Station
+3.)	Kancharapalem
+4.)	Nad
+5.)	Gopalapatnam Bus Stop
+6.)	Simhachalam Hills
+
+
+Bus Route Name :	6B
+Bus Route Starting Stage Name :	Ohpo
+Bus Route Ending Stage Name :	Chintagatla
+Total Distance :	30 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Ohpo
+2.)	Town Kotharoad
+3.)	Convent
+4.)	Nad
+5.)	Sheelanagar
+6.)	Narava
+7.)	Chintagatla
+
+
+Bus Route Name :	700
+Bus Route Starting Stage Name :	Simhachalam
+Bus Route Ending Stage Name :	Vizianagaram
+Total Distance :	45 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Simhachalam
+2.)	Adavivaram
+3.)	Shontyam
+4.)	Anandapuram
+5.)	Padmanabham
+6.)	Vizianagaram
+
+
+
+Bus Route Name :	744
+Bus Route Starting Stage Name :	Collector Office
+Bus Route Ending Stage Name :	Dosuru
+Total Distance :	110 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Collector Office
+2.)	Jagadamba
+3.)	Town Kotha Road
+4.)	Convent
+5.)	Scindia
+6.)	Gajuwaka
+7.)	Kurmannapalem
+8.)	Parawada
+9.)	Dosuru
+
+
+Bus Route Name :	77
+Bus Route Starting Stage Name :	Collector Office
+Bus Route Ending Stage Name :	Thanam
+Total Distance :	29 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Collector Office
+2.)	Jagadamba
+3.)	Town Kotharoad
+4.)	Convent
+5.)	Scidia
+6.)	Gajuwaka
+7.)	Thanam
+
+
+Bus Route Name :	77T
+Bus Route Starting Stage Name :	Collector Office
+Bus Route Ending Stage Name :	Thadi
+Total Distance :	30 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Collector Office
+2.)	Jagadamba
+3.)	Town Kotharoad
+4.)	Convent
+5.)	Scindia
+6.)	Gajuwaka
+7.)	Thadi
+
+
+Bus Route Name :	844
+Bus Route Starting Stage Name :	Collector Office
+Bus Route Ending Stage Name :	Kollivanipalem
+Total Distance :	46 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Collector Office
+2.)	Jagadamba
+3.)	Town Kotharoad
+4.)	Convent
+5.)	Scindia
+6.)	Gajuwaka
+7.)	Kurmannapalem
+8.)	Parawada
+9.)	Kollivanipalem
+
+
+Bus Route Name :	888
+Bus Route Starting Stage Name :	Anakapalle
+Bus Route Ending Stage Name :	Tagarapuvalasa
+Total Distance :	52 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Anakapalle
+2.)	Pendurthy
+3.)	Sontyam
+4.)	Anandapuram
+5.)	Tagarapuvalasa
+
+
+Bus Route Name :	900
+Bus Route Starting Stage Name :	Maddilapalem
+Bus Route Ending Stage Name :	Railway Station
+Total Distance :	28 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Maddilapalem
+2.)	Mvp Colony
+3.)	Waltair
+4.)	Rtc Complex
+5.)	Railway Station
+
+
+
+Bus Route Name :	900K
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Bhimili
+Total Distance :	47 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Waltair
+3.)	Mvp Colony
+4.)	Rushikonda
+5.)	Gitam
+6.)	Mangamaripeta
+7.)	Ins Kalinga
+8.)	Bhimili
+
+
+Bus Route Name :	900R
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Rushikonda
+Total Distance :	48 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Ins Kalinga
+3.)	Sagar Nagar
+4.)	Rtc
+5.)	Rushikonda
+
+
+Bus Route Name :	900T
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Tagarapuvalasa
+Total Distance :	50 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Waltair
+3.)	Mvp Colony
+4.)	Rushikonda
+5.)	Gitam
+6.)	Mangamaripeta
+7.)	Ins Kalinga
+8.)	Tagarapuvalasa
+
+
+Bus Route Name :	99
+Bus Route Starting Stage Name :	Collector Office
+Bus Route Ending Stage Name :	Gajuwaka
+Total Distance :	13 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Collector Office
+2.)	Jagadamba
+3.)	Town Kotharoad
+4.)	Convent
+5.)	Scindia
+6.)	Malkapuram
+7.)	Gajuwaka
+
+
+Bus Route Name :	999
+Bus Route Starting Stage Name :	Rtc Complex
+Bus Route Ending Stage Name :	Bhimili
+Total Distance :	31 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Rtc Complex
+2.)	Maddilapalem
+3.)	Endada
+4.)	Madhurwada
+5.)	Anandapuram
+6.)	Bhimili
+
+
+Bus Route Name :	99A/C
+Bus Route Starting Stage Name :	Collector Office
+Bus Route Ending Stage Name :	Chodavaram
+Total Distance :	53 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Collector Office
+2.)	Jagadamba
+3.)	Town Kotharoad
+4.)	Convent
+5.)	Scindia
+6.)	Gajuwaka
+7.)	Kurmannapalem
+8.)	Anakapalle
+9.)	Chodavaram
+
+
+Bus Route Name :	99K
+Bus Route Starting Stage Name :	Collector Office
+Bus Route Ending Stage Name :	Kurmannapalem
+Total Distance :	18 K.M.
+Bus Stages Details
+Sl No .	Bus Stage Name
+1.)	Collector Office
+2.)	Jagadamba
+3.)	Town Kotharoad
+4.)	Convent
+5.)	Scindia
+6.)	Gajuwaka
+7.)	Kurmannapalem
